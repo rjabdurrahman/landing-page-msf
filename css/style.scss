@@ -1,8 +1,11 @@
+$padding: 120px;
+
 body {
     margin: 0;
     font-family: "Rboto", sans-serif !important;
     background: url("../img/bg3.jpg") no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 a {
@@ -22,7 +25,7 @@ input {
 }
 
 button {
-    font-family: 'Montserrat', sans-serif !important;
+    font-family: "Montserrat", sans-serif !important;
     border: none;
     outline: none;
     cursor: pointer;
@@ -30,14 +33,12 @@ button {
 }
 
 h2.title {
-    font-family: 'Exo 2', sans-serif;
+    font-family: "Exo 2", sans-serif;
 }
 
 header {
-    padding: 40px 120px;
+    padding: clamp(10px, 3vw, 40px) clamp(20px, 10vw, 120px);
     .logo {
-        display: flex;
-        justify-content: center;
         img {
             height: 80px;
             width: auto;
@@ -46,20 +47,21 @@ header {
 }
 
 main {
-    padding: 0 120px;
+    margin: auto;
+    min-height: calc(100vh - 210px);
     .letter {
-        margin-bottom: 40px;
+        margin-bottom: clamp(25px, 3vw, 40px);
         .content {
             margin: auto;
             max-width: 800px;
             background-color: white;
-            padding: 40px;
+            padding: clamp(25px, 3vw, 40px);
 
             .btn-container {
                 display: flex;
                 justify-content: flex-end;
                 button {
-                    padding: 16px 40px;
+                    padding: clamp(12px, 1.5vw, 16px) clamp(30px, 3.5vw, 40px);
                     margin: 50px 10vw 0 0;
                     display: inline-flex;
                     gap: 12px;
@@ -68,12 +70,12 @@ main {
             }
 
             .text {
-                font-size: 20px;
-                line-height: 30px;
+                font-size: clamp(16px, 1.5vw, 20px);
+                line-height: clamp(26px, 2.5vw, 30px);
 
                 &::first-line {
-                    font-size: 22px;
-                    line-height: 35px;
+                    font-size: clamp(19px, 2vw, 22px);
+                    line-height: clamp(30px, 3vw, 35px);
                 }
             }
         }
@@ -81,10 +83,14 @@ main {
 }
 
 footer {
+    > div {
+        margin: auto;
+        max-width: 800px;
+    }
+    padding: clamp(10px, 2vw, 20px) 0;
     font-family: "Poppins", sans-serif;
-    font-size: 18px;
+    font-size: clamp(16px, 1.5vw, 18px);
     text-align: center;
-    padding: 20px 120px;
 }
 
 .w3-modal {

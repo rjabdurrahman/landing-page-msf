@@ -3,6 +3,7 @@ body {
   font-family: "Rboto", sans-serif !important;
   background: url("../img/bg3.jpg") no-repeat;
   background-size: cover;
+  min-height: 100vh;
 }
 
 a {
@@ -22,7 +23,7 @@ input {
 }
 
 button {
-  font-family: 'Montserrat', sans-serif !important;
+  font-family: "Montserrat", sans-serif !important;
   border: none;
   outline: none;
   cursor: pointer;
@@ -30,20 +31,11 @@ button {
 }
 
 h2.title {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 header {
-  padding: 40px 120px;
-}
-
-header .logo {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  padding: clamp(10px, 3vw, 40px) clamp(20px, 10vw, 120px);
 }
 
 header .logo img {
@@ -52,18 +44,19 @@ header .logo img {
 }
 
 main {
-  padding: 0 120px;
+  margin: auto;
+  min-height: calc(100vh - 210px);
 }
 
 main .letter {
-  margin-bottom: 40px;
+  margin-bottom: clamp(25px, 3vw, 40px);
 }
 
 main .letter .content {
   margin: auto;
   max-width: 800px;
   background-color: white;
-  padding: 40px;
+  padding: clamp(25px, 3vw, 40px);
 }
 
 main .letter .content .btn-container {
@@ -76,7 +69,7 @@ main .letter .content .btn-container {
 }
 
 main .letter .content .btn-container button {
-  padding: 16px 40px;
+  padding: clamp(12px, 1.5vw, 16px) clamp(30px, 3.5vw, 40px);
   margin: 50px 10vw 0 0;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -88,20 +81,25 @@ main .letter .content .btn-container button {
 }
 
 main .letter .content .text {
-  font-size: 20px;
-  line-height: 30px;
+  font-size: clamp(16px, 1.5vw, 20px);
+  line-height: clamp(26px, 2.5vw, 30px);
 }
 
 main .letter .content .text::first-line {
-  font-size: 22px;
-  line-height: 35px;
+  font-size: clamp(19px, 2vw, 22px);
+  line-height: clamp(30px, 3vw, 35px);
 }
 
 footer {
+  padding: clamp(10px, 2vw, 20px) 0;
   font-family: "Poppins", sans-serif;
-  font-size: 18px;
+  font-size: clamp(16px, 1.5vw, 18px);
   text-align: center;
-  padding: 20px 120px;
+}
+
+footer > div {
+  margin: auto;
+  max-width: 800px;
 }
 
 .w3-modal header span:hover {
