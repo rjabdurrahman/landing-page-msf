@@ -38,7 +38,7 @@ function nextPrev(n) {
     // ... the form gets submitted:
     document.querySelector('#popup_form').style.display = 'none';
     document.querySelector('h2.title').style.display = 'none';
-    document.getElementById('iframe').style.display = 'block';
+    document.querySelector('iframe').style.display = 'block';
   }
   // Otherwise, display the correct tab:
   showTab(currentTab);
