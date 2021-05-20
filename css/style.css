@@ -39,7 +39,7 @@ header {
 }
 
 header .logo img {
-  height: 80px;
+  height: clamp(50px, 6vw, 80px);
   width: auto;
 }
 

@@ -40,7 +40,7 @@ header {
     padding: clamp(10px, 3vw, 40px) clamp(20px, 10vw, 120px);
     .logo {
         img {
-            height: 80px;
+            height: clamp(50px, 6vw, 80px);
             width: auto;
         }
     }
