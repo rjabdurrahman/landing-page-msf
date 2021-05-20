@@ -105,6 +105,13 @@ footer {
             }
         }
     }
+
+    iframe {
+        display: none;
+        height: 600px;
+        width: 100%;
+        border: none;
+    }
 }
 
 #popup_form {

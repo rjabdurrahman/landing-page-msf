@@ -111,6 +111,13 @@ footer > div {
   background-color: lightgray;
 }
 
+.w3-modal iframe {
+  display: none;
+  height: 600px;
+  width: 100%;
+  border: none;
+}
+
 #popup_form {
   background-color: #ffffff;
   margin: auto;
