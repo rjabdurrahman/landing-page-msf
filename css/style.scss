@@ -22,16 +22,22 @@ input {
 }
 
 button {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Montserrat', sans-serif !important;
     border: none;
     outline: none;
     cursor: pointer;
     background-color: none;
 }
 
+h2.title {
+    font-family: 'Exo 2', sans-serif;
+}
+
 header {
     padding: 40px 120px;
     .logo {
+        display: flex;
+        justify-content: center;
         img {
             height: 80px;
             width: auto;
@@ -75,6 +81,7 @@ main {
 }
 
 footer {
+    font-family: "Poppins", sans-serif;
     font-size: 18px;
     text-align: center;
     padding: 20px 120px;
@@ -85,8 +92,6 @@ footer {
     margin: auto;
     font-family: Raleway;
     padding: 40px;
-    width: 70%;
-    min-width: 300px;
 }
 
 h1 {
