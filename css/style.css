@@ -104,6 +104,11 @@ footer {
   padding: 20px 120px;
 }
 
+.w3-modal header span:hover {
+  color: #000;
+  background-color: lightgray;
+}
+
 #popup_form {
   background-color: #ffffff;
   margin: auto;
